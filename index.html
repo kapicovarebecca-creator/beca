@@ -145,7 +145,8 @@ section{padding:72px 0}
 /* ---------- coach ---------- */
 .coach{display:grid;gap:30px;align-items:center}
 @media(min-width:820px){.coach{grid-template-columns:320px 1fr;gap:50px}}
-.coach-photo{aspect-ratio:4/5;background:var(--white);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--ink-soft);font-size:.9rem;padding:20px}
+.coach-photo{aspect-ratio:4/5;background:var(--white);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--ink-soft);font-size:.9rem;padding:20px;overflow:hidden}
+.coach-photo img{width:100%;height:100%;object-fit:cover}
 .quotes{display:grid;gap:18px;margin-top:40px}
 @media(min-width:820px){.quotes{grid-template-columns:repeat(3,1fr)}}
 .quote{background:var(--white);border-left:3px solid var(--red);padding:20px 22px;border-radius:0 var(--radius) var(--radius) 0}
@@ -329,11 +330,12 @@ footer a{color:var(--white)}
 <section class="inside" id="about">
   <div class="wrap coach">
     <div class="coach-photo">
-  <img src="coachphoto.jpg" alt="Becca Kapic coaching">
-</div>
+      <img src="coachphoto.jpg" alt="Becca Kapic coaching">
+    </div>
+    <div>
       <h2>Who's writing it</h2>
       <p style="margin-top:18px">I'm Becca Kapic. [Your qualification &mdash; e.g. certified personal trainer, nutrition coach]. I've been coaching for [X] years and written plans for [X] people.</p>
-      <p>[Two or three sentences on how you got into this and who you're best at helping. Say the true thing &mdash; people arriving from your videos already half-know you, and this is where they decide whether to trust you with their money.]</p>
+      <p>[Two or three sentences on how you got into this and who you're best at helping. Say the true thing &mdash; people arriving from your videos already half-know you, and this is where they decide whether to work with you.]</p>
       <p style="color:var(--ink-soft);font-size:.95rem">Find me on <a href="https://instagram.com/k.iar1">Instagram</a> and <a href="https://tiktok.com/@beccakapic">TikTok</a>.</p>
     </div>
   </div>
@@ -365,7 +367,7 @@ footer a{color:var(--white)}
     <div class="faq">
       <details>
         <summary>How fast will I see results?</summary>
-        <p>That depends on your starting point, your consistency and your sleep, and anyone who gives you a number without knowing you is guessing. What I can promise is a plan you can actually keep to, and honest feedback every month.</p>
+        <p>That depends on your starting point, your consistency and your sleep, and anyone who gives you a number without knowing you is guessing. What I can promise is a plan you can actually keep to, and results will follow if you do.</p>
       </details>
       <details>
         <summary>I'm a complete beginner. Is this for me?</summary>
@@ -377,7 +379,7 @@ footer a{color:var(--white)}
       </details>
       <details>
         <summary>I'm vegetarian, vegan, coeliac, or allergic to something.</summary>
-        <p>Say so in the questionnaire and it won't appear in your plan. If you're managing a medical condition, have a history of disordered eating, or you're pregnant, please talk to your doctor or a registered dietitian first &mdash; that's outside what I can coach.</p>
+        <p>Say so in the questionnaire and it won't appear in your plan. If you're managing a medical condition, have a history of disordered eating, or you're pregnant, please talk to your doctor or a registered dietitian before we start.</p>
       </details>
       <details>
         <summary>Can I message you if something isn't working?</summary>
@@ -449,7 +451,7 @@ footer a{color:var(--white)}
       </div>
 
       <div class="field">
-        <label for="f-love">Meals and food you love<span class="hint">What would you happily eat every week? Favourite dinners, go-to breakfasts, ingredients you always have in. The more you tell me here, the more your plan looks like food you'd choose yourself.</span></label>
+        <label for="f-love">Meals and food you love<span class="hint">What would you happily eat every week? Favourite dinners, go-to breakfasts, ingredients you always have in. The more you tell me here the better.</span></label>
         <textarea id="f-love"></textarea>
       </div>
 
@@ -518,7 +520,7 @@ footer a{color:var(--white)}
       <a href="tel:+420739228887">+420 739 228 887</a>
     </div>
     <div>&copy; <span id="yr"></span> Becca Kapic. Alicante, Spain.</div>
-    <p class="disclaimer">Coaching and nutrition guidance only. This isn't medical advice and isn't a substitute for care from your doctor or a registered dietitian. If you're pregnant, managing a health condition, or have a history of disordered eating, please speak to a medical professional before starting.</p>
+    <p class="disclaimer">Coaching and nutrition guidance only. This isn't medical advice and isn't a substitute for care from your doctor or a registered dietitian. If you're pregnant, managing a health condition, or have a history of disordered eating, please talk to a healthcare professional.</p>
   </div>
 </footer>
 
